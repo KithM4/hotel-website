@@ -1,4 +1,4 @@
-# Hotel Website Project
+# Hotel Website Project 🏨
 
 This project is a simple hotel website built using **HTML**, **CSS**, **JavaScript**, and **Bootstrap**. It is a front-end-only project created to practice and improve my web development skills. 
 
@@ -15,7 +15,7 @@ This project is a simple hotel website built using **HTML**, **CSS**, **JavaScri
 - **Bootstrap**
 
 ## Demo:
-You can view the live demo of the project [here](insert-link-here).
+You can view the live demo of the project [here]([insert-link-here](https://kithm4.github.io/hotel-website/)).
 
 ## Installation:
 1. Clone this repository:
