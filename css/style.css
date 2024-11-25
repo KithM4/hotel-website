@@ -286,3 +286,165 @@ footer a {
 footer a:hover {
   color: #fff;
 }
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* General Styles */
+  body {
+    font-size: 14px;
+  }
+
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.8rem;
+  }
+
+  .carousel-caption h6 {
+    font-size: 0.9rem;
+  }
+
+  /* Booking Section */
+  .booking {
+    margin-top: 0;
+    padding: 15px;
+  }
+
+  .booking .row {
+    flex-wrap: wrap;
+  }
+
+  .booking .col-md-10, .booking .col-md-2 {
+    width: 100%;
+  }
+
+  .booking .col-md-10 .row .col-md-3 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* About Section */
+  .about img {
+    width: 100%;
+  }
+
+  .about h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Room Cards */
+  .rooms-item h5 {
+    font-size: 1rem;
+  }
+
+  .rooms-item .p-4 {
+    padding: 10px;
+  }
+
+  /* Testimonials Section */
+  #testimonials {
+    padding: 20px 15px;
+  }
+
+  .testimonial-item {
+    margin-bottom: 20px;
+  }
+
+  .testimonial-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .testimonial-item h6 {
+    font-size: 1rem;
+  }
+
+  .testimonial-item p {
+    font-size: 0.85rem;
+  }
+
+  /* Contact Section */
+  #contact .form-control, #contact textarea {
+    font-size: 0.9rem;
+  }
+
+  #contact .btn-primary {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+  }
+
+  footer a {
+    display: inline-block;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Header Carousel */
+  .carousel-caption {
+    padding: 10px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption h6 {
+    font-size: 0.8rem;
+  }
+
+  /* Booking Section */
+  .booking {
+    padding: 10px;
+  }
+
+  /* Room Cards */
+  .rooms-item img {
+    height: auto;
+  }
+
+  /* Testimonials */
+  .testimonial-item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .testimonial-item h6 {
+    font-size: 0.9rem;
+  }
+
+  .testimonial-item p {
+    font-size: 0.8rem;
+  }
+
+  /* Contact Section */
+  #contact h1 {
+    font-size: 1.2rem;
+  }
+
+  #contact .btn-primary {
+    padding: 10px;
+  }
+
+  /* Footer */
+  footer p {
+    font-size: 0.85rem;
+  }
+}
