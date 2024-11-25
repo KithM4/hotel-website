@@ -15,7 +15,7 @@ This project is a simple hotel website built using **HTML**, **CSS**, **JavaScri
 - **Bootstrap**
 
 ## Demo:
-You can view the live demo of the project [here]([insert-link-here](https://kithm4.github.io/hotel-website/)).
+You can view the live demo of the project [here](https://kithm4.github.io/hotel-website/).
 
 ## Installation:
 1. Clone this repository:
