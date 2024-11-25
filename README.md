@@ -21,9 +21,11 @@ You can view the live demo of the project [here](insert-link-here).
 1. Clone this repository:
    ```bash
    git clone https://github.com/yourusername/hotel-website.git
-2.Open the index.html file in your browser.
 
-##Project Goals:
+2. Open the index.html file in your browser.
+
+
+## Project Goals:
 This project was created to:
 
 - **Practice and improve frontend web development skills.**
