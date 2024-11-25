@@ -32,5 +32,5 @@ This project was created to:
 - **Implement a responsive design using Bootstrap.**
 - **Enhance JavaScript knowledge for interactive elements.**
 
-##License:
+## License:
 *This project is licensed under the MIT License - see the LICENSE file for details.*
