@@ -2,6 +2,8 @@
 
 This project is a simple hotel website built using **HTML**, **CSS**, **JavaScript**, and **Bootstrap**. It is a front-end-only project created to practice and improve my web development skills. 
 
+![The Grand Crest](https://github.com/user-attachments/assets/2475362c-d2cc-4763-a8a5-795ff1210459)
+
 ## Features:
 - **Responsive Design**: The website is designed to be fully responsive, adapting seamlessly to different screen sizes and devices.
 - **User-Friendly UI**: The website features an easy-to-navigate layout with a clean, modern design.
