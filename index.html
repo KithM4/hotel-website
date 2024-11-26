@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+   
+
 </head>
 
 <body>
@@ -92,12 +95,10 @@
                         <div class="col-md-10">
                             <div class="row g-2">
                                 <div class="col-md-3">
-                                    <input type="text" class="form-control datetimepicker-input"
-                                        placeholder="Check-in Date">
+                                   <input type="text" id="checkin-date" class="form-control" placeholder="Check-in Date">
                                 </div>
                                 <div class="col-md-3">
-                                    <input type="text" class="form-control datetimepicker-input"
-                                        placeholder="Check-out Date">
+                                    <input type="text" id="checkout-date" class="form-control" placeholder="Check-out Date">
                                 </div>
                                 <div class="col-md-3">
                                     <select class="form-select">
@@ -296,6 +297,7 @@
     </div>
 
     <!-- JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -320,8 +322,27 @@
                     }
                 }
             });
+
+
+            
         });
     </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Initialize Flatpickr for check-in and check-out dates
+        flatpickr("#checkin-date", {
+            dateFormat: "Y-m-d",
+            minDate: "today", // Disable past dates
+        });
+
+        flatpickr("#checkout-date", {
+            dateFormat: "Y-m-d",
+            minDate: "today", // Disable past dates
+        });
+    });
+</script>
+
 </body>
 
 </html>
