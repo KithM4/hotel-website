@@ -342,12 +342,47 @@
         </footer>
     </div>
 
+   
     <!-- JavaScript -->
-    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".testimonial-carousel").owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                responsive: {
+                    0: { items: 1 },
+                    768: { items: 2 },
+                    1024: { items: 3 },
+                },
+            });
+
+            flatpickr("#checkin-date", { dateFormat: "Y-m-d", minDate: "today" });
+            flatpickr("#checkout-date", { dateFormat: "Y-m-d", minDate: "today" });
+
+            document.querySelectorAll(".btn-decrement").forEach((button) => {
+                button.addEventListener("click", function () {
+                    const input = this.nextElementSibling;
+                    const value = parseInt(input.value, 10);
+                    if (value > parseInt(input.min, 10)) input.value = value - 1;
+                });
+            });
+
+            document.querySelectorAll(".btn-increment").forEach((button) => {
+                button.addEventListener("click", function () {
+                    const input = this.previousElementSibling;
+                    const value = parseInt(input.value, 10);
+                    if (value < parseInt(input.max, 10)) input.value = value + 1;
+                });
+            });
+        });
+    </script>
 
 
 
